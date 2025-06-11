@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refurbished Laptops - Sri Nagashankara Enterprises</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .page-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('Photos/refu.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 120px 0;
+            text-align: left;
+            position: relative;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: left;
+        }
+        
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 ;
+            opacity: 0.9;
+            text-align: left;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+                .top-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .whatsapp-link {
+            color: #25D366 !important;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .whatsapp-link:hover {
+            color: #128C7E !important;
+            transform: scale(1.05);
+        }
+
+        .whatsapp-link i {
+            font-size: 1.1rem;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .whatsapp-link {
+                font-size: 0.9rem;
+            }
+        }
+
+        .breadcrumb {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #fff;
+            text-align: left;     
+            padding-left: 180px;   
+        }
+
+        
+        .refurbished-content {
+            padding: 60px 0;
+        }
+        
+        .section-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-intro h2 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .section-intro p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .refurbished-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .refurbished-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .refurbished-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .refurbished-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .card-content h3 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .laptop-specs {
+            margin: 15px 0;
+        }
+        
+        .spec-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .spec-item i {
+            width: 16px;
+            margin-right: 8px;
+            color: #667eea;
+        }
+        
+        .condition-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .warranty-info {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .warranty-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .features-section {
+            background: #f8f9fa;
+            padding: 60px 0;
+            margin-top: 60px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .feature-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .feature-item p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .refurbished-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+        <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +91-9886858848</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+                </div>
+                <div class="top-links">
+                    <a href="https://forms.gle/sNkA6WkytHXDow9C9">ENQUIRY</a>
+                    <a href="https://wa.me/919886858848?text=Hello%20Sri%20Nagashankara%20Enterprises,%20I%20would%20like%20to%20inquire%20about%20your%20products" 
+                   target="_blank" 
+                   class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <h1>Sri Nagashankara Enterprises</h1>
+                    </div>
+                    <nav class="nav">
+                        <a href="index.html">HOME</a>
+                        <a href="computers.html">LAPTOPS</a>
+                        <a href="accessories.html">ACCESSORIES</a>
+                        <a href="refurbished.html" class="active">REFURBISHED</a>
+                        <a href="desktop.html">DESKTOPS</a>
+                        <a href="aboutus.html">ABOUT US</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero with Background Image -->
+    <section class="page-hero">
+        <div class="hero-text">
+            <div class="container">
+                <h1>Refurbished Laptops</h1>
+                <p>Quality tested, certified refurbished laptops - Perfect blend of performance, reliability, and affordability</p>
+            </div>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Accessories</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refurbished Content -->
+    <section class="refurbished-content">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Premium Refurbished Laptops</h2>
+                <p>All our refurbished laptops undergo rigorous quality checks and testing to ensure they meet our high standards. Each laptop comes with warranty and has been thoroughly inspected by our technical team.</p>
+            </div>
+
+            <div class="refurbished-grid">
+                <!-- Laptop 1 -->
+                <div class="refurbished-card">
+                    <img src="Photos/Dell_Latitude.jpeg" alt="Dell Latitude 7420">
+                    <div class="card-content">
+                        <div class="condition-badge">Excellent Condition</div>
+                        <h3>Dell Latitude 7420</h3>
+                        <div class="laptop-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Intel Core i7-1165G7 (11th Gen)</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>16GB DDR4 RAM</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>512GB NVMe SSD</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>14" Full HD Display</span>
+                            </div>
+                        </div>
+                        <!-- <div class="warranty-info">
+                            <p><i class="fas fa-shield-alt"></i> 6 Months Warranty Included</p>
+                        </div> -->
+                        <a href="aboutus.html"><button class="contact-btn">Contact for Details</button></a>
+                    </div>
+                </div>
+
+                <!-- Laptop 2 -->
+                <div class="refurbished-card">
+                    <img src="Photos/Lenovo_ThinkPad.jpeg" alt="Lenovo ThinkPad T480">
+                    <div class="card-content">
+                        <div class="condition-badge">Very Good Condition</div>
+                        <h3>Lenovo ThinkPad T480</h3>
+                        <div class="laptop-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Intel Core i5-8250U (8th Gen)</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>8GB DDR4 RAM</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>256GB SSD</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>14" Full HD IPS Display</span>
+                            </div>
+                        </div>
+                        <!-- <div class="warranty-info">
+                            <p><i class="fas fa-shield-alt"></i> 6 Months Warranty Included</p>
+                        </div> -->
+                        <a href="aboutus.html"><button class="contact-btn">Contact for Details</button></a>
+                    </div>
+                </div>
+
+                <!-- Laptop 3 -->
+                <div class="refurbished-card">
+                    <img src="Photos/elitebook.jpeg" alt="HP EliteBook 840 G7">
+                    <div class="card-content">
+                        <div class="condition-badge">Excellent Condition</div>
+                        <h3>HP EliteBook 840 G7</h3>
+                        <div class="laptop-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Intel Core i7-10510U (10th Gen)</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>16GB DDR4 RAM</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>512GB NVMe SSD</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>14" Full HD Touch Display</span>
+                            </div>
+                        </div>
+                        <!-- <div class="warranty-info">
+                            <p><i class="fas fa-shield-alt"></i> 6 Months Warranty Included</p>
+                        </div> -->
+                        <a href="aboutus.html"><button class="contact-btn">Contact for Details</button></a>
+                    </div>
+                </div>
+
+                <!-- Laptop 4 -->
+                <div class="refurbished-card">
+                    <img src="Photos/zenbook.jpeg" alt="ASUS ZenBook 14">
+                    <div class="card-content">
+                        <div class="condition-badge">Good Condition</div>
+                        <h3>ASUS ZenBook 14 UX425</h3>
+                        <div class="laptop-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Intel Core i5-1135G7 (11th Gen)</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>8GB LPDDR4X RAM</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>512GB NVMe SSD</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>14" Full HD Display</span>
+                            </div>
+                        </div>
+                        <!-- <div class="warranty-info">
+                            <p><i class="fas fa-shield-alt"></i> 3 Months Warranty Included</p>
+                        </div> -->
+                        <a href="aboutus.html"><button class="contact-btn">Contact for Details</button></a>
+                    </div>
+                </div>
+
+                <!-- Laptop 5 -->
+                <div class="refurbished-card">
+                    <img src="Photos/air_m1.jpeg" alt="MacBook Air M1">
+                    <div class="card-content">
+                        <div class="condition-badge">Excellent Condition</div>
+                        <h3>Apple MacBook Air M1</h3>
+                        <div class="laptop-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Apple M1 Chip</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>8GB Unified Memory</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>256GB SSD</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>13.3" Retina Display</span>
+                            </div>
+                        </div>
+                        <!-- <div class="warranty-info">
+                            <p><i class="fas fa-shield-alt"></i> 6 Months Warranty Included</p>
+                        </div> -->
+                        <a href="aboutus.html"><button class="contact-btn">Contact for Details</button></a>
+                    </div>
+                </div>
+
+                <!-- Laptop 6 -->
+                <div class="refurbished-card">
+                    <img src="Photos/swift.jpeg" alt="Acer Swift 3">
+                    <div class="card-content">
+                        <div class="condition-badge">Very Good Condition</div>
+                        <h3>Acer Swift 3 SF314-59</h3>
+                        <div class="laptop-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Intel Core i5-1135G7 (11th Gen)</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>8GB DDR4 RAM</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>512GB NVMe SSD</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>14" Full HD IPS Display</span>
+                            </div>
+                        </div>
+                        <!-- <div class="warranty-info">
+                            <p><i class="fas fa-shield-alt"></i> 6 Months Warranty Included</p>
+                        </div> -->
+                        <a href="aboutus.html"><button class="contact-btn">Contact for Details</button></a>
+                    </div>
+                </div>
+
+                <!-- Laptop 7 -->
+                <div class="refurbished-card">
+                    <img src="Photos/precesion.jpg" alt="Dell Precision 3551">
+                    <div class="card-content">
+                        <div class="condition-badge">Good Condition</div>
+                        <h3>Dell Precision 3551</h3>
+                        <div class="laptop-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Intel Core i7-10750H (10th Gen)</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>16GB DDR4 RAM</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>512GB NVMe SSD</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>15.6" Full HD Display</span>
+                            </div>
+                        </div>
+                        <!-- <div class="warranty-info">
+                            <p><i class="fas fa-shield-alt"></i> 3 Months Warranty Included</p>
+                        </div> -->
+                        <a href="aboutus.html"><button class="contact-btn">Contact for Details</button></a>
+                    </div>
+                </div>
+
+                <!-- Laptop 8 -->
+                <div class="refurbished-card">
+                    <img src="Photos/HP Pavilion 15-eg0000.jpeg" alt="HP Pavilion 15">
+                    <div class="card-content">
+                        <div class="condition-badge">Very Good Condition</div>
+                        <h3>HP Pavilion 15-eg0000</h3>
+                        <div class="laptop-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Intel Core i5-1135G7 (11th Gen)</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>8GB DDR4 RAM</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>256GB SSD + 1TB HDD</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>15.6" Full HD Display</span>
+                            </div>
+                        </div>
+                        <!-- <div class="warranty-info">
+                            <p><i class="fas fa-shield-alt"></i> 6 Months Warranty Included</p>
+                        </div> -->
+                        <a href="aboutus.html"><button class="contact-btn">Contact for Details</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Why Choose Our Refurbished Laptops?</h2>
+                <p>We ensure every refurbished laptop meets our quality standards</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Quality Tested</h3>
+                    <p>Every laptop undergoes comprehensive testing and quality checks</p>
+                </div>
+                <!-- <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Warranty Included</h3>
+                    <p>All refurbished laptops come with warranty for your peace of mind</p>
+                </div> -->
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Professional Service</h3>
+                    <p>Expert technical support and after-sales service</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Best Value</h3>
+                    <p>Premium laptops at affordable prices with excellent performance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sri Nagashankara Enterprises</h3>
+                    <p>Your trusted partner for all laptop needs. Buy Best Price Laptops Online - HP, Dell, Lenovo, Apple</p>
+                    <p>#336/3, 1st floor, Krishna Devaraya Road 7th Cross, Gavipuram BENGALURU, KARNATAKA 560019</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Deals</h4>
+                    <ul>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">Corporate Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>TERMS & CONDITIONS</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sri Nagashankara Enterprises. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

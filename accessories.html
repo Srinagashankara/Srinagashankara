@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Accessories - Laptop Store India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="accessories-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Inline CSS as backup */
+        .accessories-hero {
+            background-image: url("Photos/laptop_accessories.webp") !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            min-height: 60vh !important;
+            position: relative !important;
+        }
+        .accessories-hero::after {
+            content: "" !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            background: rgba(0, 0, 0, 0.5) !important;
+            z-index: 1 !important;
+        }
+        .hero-content {
+            position: relative !important;
+            z-index: 2 !important;
+        }
+                .top-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .whatsapp-link {
+            color: #25D366 !important;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .whatsapp-link:hover {
+            color: #128C7E !important;
+            transform: scale(1.05);
+        }
+
+        .whatsapp-link i {
+            font-size: 1.1rem;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .whatsapp-link {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+        <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +91-9886858848</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+                </div>
+                <div class="top-links">
+                    <a href="https://forms.gle/sNkA6WkytHXDow9C9">ENQUIRY</a>
+                    <a href="https://wa.me/919886858848?text=Hello%20Sri%20Nagashankara%20Enterprises,%20I%20would%20like%20to%20inquire%20about%20your%20products" 
+                   target="_blank" 
+                   class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <h1>Sri Nagashankara Enterprises</h1>
+                    </div>
+                    <nav class="nav">
+                        <a href="index.html">HOME</a>
+                        <a href="computers.html">LAPTOPS</a>
+                        <!-- <a href="#">LAPTOPS</a> -->
+                        <a href="accessories.html" class="active">ACCESSORIES</a>
+                        <a href="refurbished.html">REFURBISHED</a>
+                        <a href="desktop.html">DESKTOPS</a>
+                        <a href="aboutus.html">ABOUT US</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <!-- <div class="search-box">
+                        <input type="text" placeholder="Search accessories...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="header-icons">
+                        <i class="fas fa-user"></i>
+                        <i class="fas fa-heart"></i>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="accessories-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Computer Accessories</h1>
+                    <p>Enhance your computing experience with premium keyboards, mice, webcams, headphones and more</p>
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a> / <span>Accessories</span>
+                    </div>
+                </div>
+                <!-- <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Products</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Brands</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Filter Section
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Sort By:</label>
+                    <select class="filter-select" id="sort-select">
+                        <option>Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest First</option>
+                        <option>Best Rated</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select class="filter-select" id="category-select">
+                        <option>All Categories</option>
+                        <option>Keyboards</option>
+                        <option>Mice</option>
+                        <option>Webcams</option>
+                        <option>Headsets</option>
+                        <option>Earphones</option>
+                        <option>Headphones</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price Range:</label>
+                    <select class="filter-select" id="price-select">
+                        <option>All Prices</option>
+                        <option>Under ₹1,000</option>
+                        <option>₹1,000 - ₹3,000</option>
+                        <option>₹3,000 - ₹5,000</option>
+                        <option>Above ₹5,000</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Keyboards Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-keyboard"></i> Keyboards</h2>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="keyboards" data-price="9999">
+                    <div class="product-badge">Wireless</div>
+                    <img src="Photos/Logitech_MX.jpeg" alt="Logitech MX Keys">
+                    <div class="product-info">
+                        <h3>Logitech MX Keys</h3>
+                        <p>Premium Wireless Keyboard with Backlight</p>
+                        <div class="price-display">
+                            <span class="price">9,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="keyboards" data-price="14999">
+                    <div class="product-badge">Gaming</div>
+                    <img src="Photos/keyboards.jpg" alt="Razer Huntsman Elite">
+                    <div class="product-info">
+                        <h3>Razer Huntsman Elite</h3>
+                        <p>RGB Gaming Keyboard with Opto-Mechanical Switches</p>
+                        <div class="price-display">
+                            <span class="price">14,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="keyboards" data-price="11900">
+                    <div class="product-badge">Premium</div>
+                    <img src="Photos/Apple_Magic.jpeg" alt="Apple Magic Keyboard">
+                    <div class="product-info">
+                        <h3>Apple Magic Keyboard</h3>
+                        <p>Wireless Keyboard with Numeric Keypad</p>
+                        <div class="price-display">
+                            <span class="price">11,900</span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="product-card" data-category="keyboards" data-price="599">
+                    <div class="product-badge">Budget</div>
+                    <img src="https://images.unsplash.com/photo-1561112078-7d24e04c3407?w=300&h=200&fit=crop" alt="Logitech K120">
+                    <div class="product-info">
+                        <h3>Logitech K120</h3>
+                        <p>Wired USB Keyboard</p>
+                        <div class="price-display">
+                            <span class="price">599</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="keyboards" data-price="4999">
+                    <div class="product-badge">Ergonomic</div>
+                    <img src="Photos/Microsoft_Ergonomic.jpeg" alt="Microsoft Ergonomic Keyboard">
+                    <div class="product-info">
+                        <h3>Microsoft Ergonomic Keyboard</h3>
+                        <p>Split Keyboard Design with Wrist Rest</p>
+                        <div class="price-display">
+                            <span class="price">4,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="keyboards" data-price="7999">
+                    <div class="product-badge">Mechanical</div>
+                    <img src="Photos/Corsair_K95.avif" alt="Corsair K95 RGB">
+                    <div class="product-info">
+                        <h3>Corsair K95 RGB</h3>
+                        <p>Mechanical Gaming Keyboard with Cherry MX Switches</p>
+                        <div class="price-display">
+                            <span class="price">7,999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mice Section -->
+    <section class="products-section gray-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-mouse"></i> Mice & Pointing Devices</h2>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="mice" data-price="7499">
+                    <div class="product-badge">Premium</div>
+                    <img src="Photos/Logitech_MX.webp" alt="Logitech MX Master 3">
+                    <div class="product-info">
+                        <h3>Logitech MX Master 3</h3>
+                        <p>Advanced Wireless Mouse for Professionals</p>
+                        <div class="price-display">
+                            <span class="price">7,499</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="mice" data-price="5999">
+                    <div class="product-badge">Gaming</div>
+                    <img src="Photos/Razer_DeathAdder.jpg" alt="Razer DeathAdder V2">
+                    <div class="product-info">
+                        <h3>Razer DeathAdder V2</h3>
+                        <p>Gaming Mouse with 20K DPI Optical Sensor</p>
+                        <div class="price-display">
+                            <span class="price">5,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="mice" data-price="7500">
+                    <div class="product-badge">Wireless</div>
+                    <img src="Photos/Apple_Magic_m.jpeg" alt="Apple Magic Mouse 2">
+                    <div class="product-info">
+                        <h3>Apple Magic Mouse 2</h3>
+                        <p>Wireless Multi-Touch Mouse</p>
+                        <div class="price-display">
+                            <span class="price">7,500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="mice" data-price="399">
+                    <div class="product-badge">Budget</div>
+                    <img src="Photos/Logitech_M90.webp" alt="Logitech M90">
+                    <div class="product-info">
+                        <h3>Logitech M90</h3>
+                        <p>Wired USB Mouse</p>
+                        <div class="price-display">
+                            <span class="price">399</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="mice" data-price="6999">
+                    <div class="product-badge">Ergonomic</div>
+                    <img src="Photos/Logitech MX Vertical.jpeg" alt="Logitech MX Vertical">
+                    <div class="product-info">
+                        <h3>Logitech MX Vertical</h3>
+                        <p>Advanced Ergonomic Vertical Mouse</p>
+                        <div class="price-display">
+                            <span class="price">6,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="mice" data-price="3499">
+                    <div class="product-badge">Wireless</div>
+                    <img src="Photos/Logitech M705.jpeg" alt="Logitech M705">
+                    <div class="product-info">
+                        <h3>Logitech M705</h3>
+                        <p>Marathon Wireless Mouse with 3-Year Battery</p>
+                        <div class="price-display">
+                            <span class="price">3,499</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Webcams Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-video"></i> Webcams & Cameras</h2>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="webcams" data-price="16999">
+                    <div class="product-badge">4K</div>
+                    <img src="Photos/Logitech Brio 4K.jpeg" alt="Logitech Brio 4K">
+                    <div class="product-info">
+                        <h3>Logitech Brio 4K</h3>
+                        <p>Ultra HD Webcam with HDR and Windows Hello</p>
+                        <div class="price-display">
+                            <span class="price">16,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="webcams" data-price="8499">
+                    <div class="product-badge">Full HD</div>
+                    <img src="Photos/Logitech C920 HD Pro.jpg" alt="Logitech C920 HD Pro">
+                    <div class="product-info">
+                        <h3>Logitech C920 HD Pro</h3>
+                        <p>Full HD 1080p Webcam</p>
+                        <div class="price-display">
+                            <span class="price">8,499</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="webcams" data-price="9999">
+                    <div class="product-badge">Streaming</div>
+                    <img src="Photos/Razer Kiyo.jpeg" alt="Razer Kiyo">
+                    <div class="product-info">
+                        <h3>Razer Kiyo</h3>
+                        <p>Streaming Webcam with Ring Light</p>
+                        <div class="price-display">
+                            <span class="price">9,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="webcams" data-price="2499">
+                    <div class="product-badge">Budget</div>
+                    <img src="Photos/Logitech C270.jpeg" alt="Logitech C270">
+                    <div class="product-info">
+                        <h3>Logitech C270</h3>
+                        <p>HD Webcam with Noise-Reducing Mic</p>
+                        <div class="price-display">
+                            <span class="price">2,499</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Headphones & Audio Section -->
+    <section class="products-section gray-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-headphones"></i> Headphones & Audio</h2>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="headphones" data-price="24990">
+                    <div class="product-badge">Noise Cancelling</div>
+                    <img src="Photos/Sony WH-1000XM4.avif" alt="Sony WH-1000XM4">
+                    <div class="product-info">
+                        <h3>Sony WH-1000XM4</h3>
+                        <p>Wireless Noise Cancelling Headphones</p>
+                        <div class="price-display">
+                            <span class="price">24,990</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="earphones" data-price="22900">
+                    <div class="product-badge">TWS</div>
+                    <img src="Photos/Apple AirPods Pro.webp" alt="Apple AirPods Pro">
+                    <div class="product-info">
+                        <h3>Apple AirPods Pro</h3>
+                        <p>True Wireless Earbuds with Active Noise Cancellation</p>
+                        <div class="price-display">
+                            <span class="price">22,900</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="headsets" data-price="8999">
+                    <div class="product-badge">Gaming</div>
+                    <img src="Photos/HyperX.jpeg" alt="HyperX Cloud Alpha">
+                    <div class="product-info">
+                        <h3>HyperX Cloud Alpha</h3>
+                        <p>Gaming Headset with Dual Chamber Drivers</p>
+                        <div class="price-display">
+                            <span class="price">8,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="earphones" data-price="1499">
+                    <div class="product-badge">Budget</div>
+                    <img src="Photos/boAt Rockerz 255 Pro+.jpeg" alt="boAt Rockerz 255 Pro+">
+                    <div class="product-info">
+                        <h3>boAt Rockerz 255 Pro+</h3>
+                        <p>Wireless Bluetooth Earphones</p>
+                        <div class="price-display">
+                            <span class="price">1,499</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="headphones" data-price="11999">
+                    <div class="product-badge">Studio</div>
+                    <img src="Photos/Audio-Technica ATH-M50x.jpg" alt="Audio-Technica ATH-M50x">
+                    <div class="product-info">
+                        <h3>Audio-Technica ATH-M50x</h3>
+                        <p>Professional Studio Monitor Headphones</p>
+                        <div class="price-display">
+                            <span class="price">11,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="headphones" data-price="18999">
+                    <div class="product-badge">Premium</div>
+                    <img src="Photos/Bose QuietComfort 35 II.jpeg" alt="Bose QuietComfort 35 II">
+                    <div class="product-info">
+                        <h3>Bose QuietComfort 35 II</h3>
+                        <p>Wireless Noise Cancelling Headphones</p>
+                        <div class="price-display">
+                            <span class="price">18,999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Accessories Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-plug"></i> Other Essential Accessories</h2>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="storage" data-price="12999">
+                    <div class="product-badge">Storage</div>
+                    <img src="Photos/Samsung T7 Portable SSD.jpeg" alt="Samsung T7 Portable SSD">
+                    <div class="product-info">
+                        <h3>Samsung T7 Portable SSD</h3>
+                        <p>1TB External Solid State Drive</p>
+                        <div class="price-display">
+                            <span class="price">12,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="connectivity" data-price="3999">
+                    <div class="product-badge">Connectivity</div>
+                    <img src="Photos/Anker USB C Hub.jpg" alt="Anker USB C Hub">
+                    <div class="product-info">
+                        <h3>Anker USB C Hub</h3>
+                        <p>7-in-1 USB C Hub Adapter</p>
+                        <div class="price-display">
+                            <span class="price">3,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gaming" data-price="2999">
+                    <div class="product-badge">Gaming</div>
+                    <img src="Photos/SteelSeries QcK.jpg" alt="SteelSeries QcK">
+                    <div class="product-info">
+                        <h3>SteelSeries QcK</h3>
+                        <p>Gaming Mouse Pad - XL RGB</p>
+                        <div class="price-display">
+                            <span class="price">2,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="ergonomic" data-price="1999">
+                    <div class="product-badge">Ergonomic</div>
+                    <img src="Photos/Nexstand K2.jpeg" alt="Nexstand K2">
+                    <div class="product-info">
+                        <h3>Nexstand K2</h3>
+                        <p>Portable Laptop Stand</p>
+                        <div class="price-display">
+                            <span class="price">1,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="power" data-price="4999">
+                    <div class="product-badge">Power</div>
+                    <img src="Photos/Anker PowerCore 26800.jpg" alt="Anker PowerCore 26800">
+                    <div class="product-info">
+                        <h3>Anker PowerCore 26800</h3>
+                        <p>Portable Charger Power Bank</p>
+                        <div class="price-display">
+                            <span class="price">4,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cables" data-price="899">
+                    <div class="product-badge">Cables</div>
+                    <img src="Photos/Belkin USB-C Cable.webp" alt="Belkin USB-C Cable">
+                    <div class="product-info">
+                        <h3>Belkin USB-C Cable</h3>
+                        <p>3ft USB-C to USB-C Cable</p>
+                        <div class="price-display">
+                            <span class="price">899</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sri Nagashankara Enterprises</h3>
+                    <p>Your trusted partner for all laptop needs. Buy Best Price Laptops Online - HP, Dell, Lenovo, Apple</p>
+                    <p>#336/3, 1st floor, Krishna Devaraya Road 7th Cross, Gavipuram BENGALURU, KARNATAKA 560019</p>
+                </div>
+                <!-- <div class="footer-section">
+                    <h4>MY ACCOUNT</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-section">
+                    <h4>Our Deals</h4>
+                    <ul>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">Corporate Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>TERMS & CONDITIONS</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Laptop Store India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to change background for testing
+        function changeBackground(className) {
+            const hero = document.querySelector('.accessories-hero');
+            hero.className = 'accessories-hero ' + className;
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="accessories-script.js"></script>
+</body>
+</html>

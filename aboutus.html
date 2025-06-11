@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sri Nagashankara Enterprises</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), 
+                        url('Photos/aboutus.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(255, 253, 253);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+        .top-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .whatsapp-link {
+            color: #25D366 !important;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .whatsapp-link:hover {
+            color: #128C7E !important;
+            transform: scale(1.05);
+        }
+
+        .whatsapp-link i {
+            font-size: 1.1rem;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .whatsapp-link {
+                font-size: 0.9rem;
+            }
+        }
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .about-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .about-content {
+            padding: 80px 0;
+        }
+        
+        .about-section {
+            margin-bottom: 60px;
+        }
+        
+        .about-section h2 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .about-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .value-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .value-card h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .value-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .brands-section {
+            background: #f8f9fa;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .brands-section h2 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+        
+        .brand-showcase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .brand-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #666;
+            padding: 15px 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .brand-logo:hover {
+            color: #667eea;
+            transform: translateY(-5px);
+        }
+        
+        .stats-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-section h2 {
+                font-size: 2rem;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+        <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +91-9886858848</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+                </div>
+                <div class="top-links">
+                    <a href="https://forms.gle/sNkA6WkytHXDow9C9">ENQUIRY</a>
+                    <a href="https://wa.me/919886858848?text=Hello%20Sri%20Nagashankara%20Enterprises,%20I%20would%20like%20to%20inquire%20about%20your%20products" 
+                   target="_blank" 
+                   class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <h1>Sri Nagashankara Enterprises</h1>
+                    </div>
+                    <nav class="nav">
+                        <a href="index.html">HOME</a>
+                        <a href="computers.html">LAPTOPS</a>
+                        <a href="accessories.html">ACCESSORIES</a>
+                        <a href="refurbished.html">REFURBISHED</a>
+                        <a href="desktop.html">DESKTOPS</a>
+                        <a href="about-us.html" class="active">ABOUT US</a>
+                    </nav>
+                </div>
+                <!-- <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="header-icons">
+                        <i class="fas fa-user"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Sri Nagashankara Enterprises</h1>
+            <p>Your trusted partner for computers, laptops, and technology solutions in India</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <!-- Company Introduction -->
+            <div class="about-section">
+                <h2>Who We Are</h2>
+                <div class="about-text">
+                    <p>We are newly established computer and laptop dealers in India. We provide wide selection of latest computers and accessories offering variety of models and configuration to suit your needs, we have a varied selection of computers from top brands, including Apple, HP, Dell, Lenovo, Asus, and Acer. Our extensive range of computers ensures you'll find the perfect system to meet your needs and budget.</p>
+                    <br>
+                    <p>And we do offer reliable used laptops that undergo rigorous quality checks to deliver exceptional value. Whether you're a student, professional, or casual user, our refurbished laptops are the perfect blend of performance, reliability, and affordability.</p>
+                </div>
+            </div>
+
+            <!-- Vision, Mission, Goals, Values -->
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be the exceptional and successful computer and laptop dealers.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>Is to earn the highest respect and trust of our clients and meet their expectation.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Our Goals</h3>
+                    <p>Offer exceptional and stable quality service to our clients to maintain their trust.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Focus on the quality and timely delivery, cultivate ever enterprising, team up with great minds, and uphold integrity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands gray-bg">
+    <div class="container">
+        <h2>Brands We Deal With</h2>
+        <div class="brand-logos">
+            <div class="brand-card">
+                <img src="Photos/apple.webp" alt="Apple Logo">
+                <p>Apple</p>
+            </div>
+            <div class="brand-card">
+                <img src="Photos/dell.png" alt="Dell Logo">
+                <p>DELL</p>
+            </div>
+            <div class="brand-card">
+                <img src="Photos/acer.png" alt="Acer Logo">
+                <p>Acer</p>
+            </div>
+            <div class="brand-card">
+                <img src="Photos/asus.png" alt="ASUS Logo">
+                <p>ASUS</p>
+            </div>
+            <div class="brand-card">
+                <img src="Photos/hp.jpeg" alt="HP Logo">
+                <p>HP</p>
+            </div>
+            <div class="brand-card">
+                <img src="Photos/lenovo.png" alt="Lenovo Logo">
+                <p>LENOVO</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Products Available</p>
+                </div>
+                <div class="stat-item">
+                    <h3>6+</h3>
+                    <p>Top Brands</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-section">
+                <h2>Our Firm</h2>
+                <div class="about-text">
+                    <p><i class="fas fa-map-marker-alt"></i> #336/3, 1st floor, Krishna Devaraya Road 7th Cross, Gavipuram BENGALURU, KARNATAKA 560019</p>
+                    <br>
+                    <p><i class="fas fa-phone"></i> +91-9886858848</p>
+                    <br>
+                    <p>Explore our wide range of computers, laptops, and accessories. We are ready to help you find the perfect technology solution for your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sri Nagashankara Enterprises</h3>
+                    <p>Your trusted partner for all laptop needs. Buy Best Price Laptops Online - HP, Dell, Lenovo, Apple</p>
+                    <p>#336/3, 1st floor, Krishna Devaraya Road 7th Cross, Gavipuram BENGALURU, KARNATAKA 560019</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Deals</h4>
+                    <ul>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">Corporate Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>TERMS & CONDITIONS</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sri Nagashankara Enterprises. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

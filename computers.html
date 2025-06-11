@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computers & Laptops - Laptop Store India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+/* WhatsApp Link Styling */
+.top-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.whatsapp-link {
+    color: #25D366 !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.whatsapp-link:hover {
+    color: #128C7E !important;
+    transform: scale(1.05);
+}
+
+.whatsapp-link i {
+    font-size: 1.1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .whatsapp-link {
+        font-size: 0.9rem;
+    }
+}
+</style>
+<body>
+    <!-- Top Bar -->
+        <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +91-9886858848</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+                </div>
+                <div class="top-links">
+                    <a href="https://forms.gle/sNkA6WkytHXDow9C9">ENQUIRY</a>
+                    <a href="https://wa.me/919886858848?text=Hello%20Sri%20Nagashankara%20Enterprises,%20I%20would%20like%20to%20inquire%20about%20your%20products" 
+                   target="_blank" 
+                   class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <h1>Sri Nagashankara Enterprises</h1>
+                    </div>
+                    <nav class="nav">
+                        <a href="index.html">HOME</a>
+                        <a href="computers.html" class="active">LAPTOPS</a>
+                        <!-- <a href="#">LAPTOPS</a> -->
+                        <a href="accessories.html">ACCESSORIES</a>
+                        <a href="refurbished.html">REFURBISHED</a>
+                        <a href="desktop.html">DESKTOPS</a>
+                        <a href="aboutus.html">ABOUT US</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <!-- <div class="search-box">
+                        <input type="text" placeholder="Search products...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="header-icons">
+                        <i class="fas fa-user"></i>
+                        <i class="fas fa-heart"></i>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Computers & Laptops</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Computers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gaming Laptops Section -->
+    <section class="products-section gray-bg">
+        <div class="container">
+            <div class="section-header-with-scroll">
+                <h2>Gaming Laptops</h2>
+                <div class="scroll-controls">
+                    <button class="scroll-btn scroll-left" data-section="gaming">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" data-section="gaming">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="product-scroll-container" id="gaming-scroll">
+                <div class="product-grid-horizontal">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=300&h=200&fit=crop" alt="Gaming Laptop">
+                        <div class="product-info">
+                            <h3>ASUS ROG Strix G15</h3>
+                            <p>AMD Ryzen 9, 16GB RAM, 1TB SSD, RTX 3070, 15.6" 300Hz</p>
+                            <div class="price-display">
+                                <span class="price">142,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/MSI_Katana.jpg" alt="Gaming Laptop">
+                        <div class="product-info">
+                            <h3>MSI Katana GF66</h3>
+                            <p>Intel Core i7, 16GB RAM, 512GB SSD, RTX 3060, 15.6" 144Hz</p>
+                            <div class="price-display">
+                                <span class="price">94,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/acer_predator.jpeg" alt="Gaming Laptop">
+                        <div class="product-info">
+                            <h3>Acer Predator Helios 300</h3>
+                            <p>Intel Core i7, 16GB RAM, 1TB SSD, RTX 3060, 15.6" 165Hz</p>
+                            <div class="price-display">
+                                <span class="price">99,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=300&h=200&fit=crop" alt="Gaming Laptop">
+                        <div class="product-info">
+                            <h3>HP Omen 16</h3>
+                            <p>Intel Core i7, 16GB RAM, 1TB SSD, RTX 3070, 16.1" 165Hz</p>
+                            <div class="price-display">
+                                <span class="price">134,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/Alienware_m15.jpg" alt="Gaming Laptop">
+                        <div class="product-info">
+                            <h3>Alienware m15 R7</h3>
+                            <p>Intel Core i9, 32GB RAM, 1TB SSD, RTX 3080, 15.6" 360Hz</p>
+                            <div class="price-display">
+                                <span class="price">249,990</span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Laptops Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header-with-scroll">
+                <h2>Business Laptops</h2>
+                <div class="scroll-controls">
+                    <button class="scroll-btn scroll-left" data-section="business">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" data-section="business">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="product-scroll-container" id="business-scroll">
+                <div class="product-grid-horizontal">
+                    <div class="product-card">
+                        <img src="Photos/Lenovo_ThinkPad.jpeg" alt="Business Laptop">
+                        <div class="product-info">
+                            <h3>Lenovo ThinkPad X1 Carbon</h3>
+                            <p>Intel Core i7, 16GB RAM, 512GB SSD, 14" FHD IPS</p>
+                            <div class="price-display">
+                                <span class="price">124,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/Dell_Latitude.jpeg" alt="Business Laptop">
+                        <div class="product-info">
+                            <h3>Dell Latitude 7420</h3>
+                            <p>Intel Core i5, 8GB RAM, 256GB SSD, 14" FHD</p>
+                            <div class="price-display">
+                                <span class="price">89,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/HP_EliteBook.jpg" alt="Business Laptop">
+                        <div class="product-info">
+                            <h3>HP EliteBook 840 G8</h3>
+                            <p>Intel Core i7, 16GB RAM, 512GB SSD, 14" FHD</p>
+                            <div class="price-display">
+                                <span class="price">104,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/ASUS_ExpertBook.jpg" alt="Business Laptop">
+                        <div class="product-info">
+                            <h3>ASUS ExpertBook B9</h3>
+                            <p>Intel Core i7, 16GB RAM, 1TB SSD, 14" FHD</p>
+                            <div class="price-display">
+                                <span class="price">119,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/surface.jpeg" alt="Business Laptop">
+                        <div class="product-info">
+                            <h3>Microsoft Surface Laptop 5</h3>
+                            <p>Intel Core i7, 16GB RAM, 512GB SSD, 13.5" Touch</p>
+                            <div class="price-display">
+                                <span class="price">139,990</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Laptops Section -->
+    <section class="products-section gray-bg">
+        <div class="container">
+            <div class="section-header-with-scroll">
+                <h2>Budget Laptops</h2>
+                <div class="scroll-controls">
+                    <button class="scroll-btn scroll-left" data-section="budget">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" data-section="budget">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="product-scroll-container" id="budget-scroll">
+                <div class="product-grid-horizontal">
+                    <div class="product-card">
+                        <img src="Photos/Acer_Aspire.jpeg" alt="Budget Laptop">
+                        <div class="product-info">
+                            <h3>Acer Aspire 5</h3>
+                            <p>AMD Ryzen 5, 8GB RAM, 512GB SSD, 15.6" FHD</p>
+                            <div class="price-display">
+                                <span class="price">49,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/HP_15s.jpeg" alt="Budget Laptop">
+                        <div class="product-info">
+                            <h3>HP 15s</h3>
+                            <p>Intel Core i3, 8GB RAM, 256GB SSD, 15.6" FHD</p>
+                            <div class="price-display">
+                                <span class="price">38,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/Lenovo_IdeaPad.webp" alt="Budget Laptop">
+                        <div class="product-info">
+                            <h3>Lenovo IdeaPad Slim 3</h3>
+                            <p>Intel Core i5, 8GB RAM, 512GB SSD, 15.6" FHD</p>
+                            <div class="price-display">
+                                <span class="price">52,990</span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/ASUS_VivoBook.jpeg" alt="Budget Laptop">
+                        <div class="product-info">
+                            <h3>ASUS VivoBook 15</h3>
+                            <p>AMD Ryzen 3, 8GB RAM, 256GB SSD, 15.6" FHD</p>
+                            <div class="price-display">
+                                <span class="price">42,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/Dell_Inspiron.jpeg" alt="Budget Laptop">
+                        <div class="product-info">
+                            <h3>Dell Inspiron 15 3000</h3>
+                            <p>Intel Core i3, 4GB RAM, 1TB HDD, 15.6" HD</p>
+                            <div class="price-display">
+                                <span class="price">29,990</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All-in-One Computers Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header-with-scroll">
+                <h2>All-in-One Computers</h2>
+                <div class="scroll-controls">
+                    <button class="scroll-btn scroll-left" data-section="aio">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" data-section="aio">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="product-scroll-container" id="aio-scroll">
+                <div class="product-grid-horizontal">
+                    <div class="product-card">
+                        <img src="Photos/HP_Pavilion.avif" alt="All-in-One Computer">
+                        <div class="product-info">
+                            <h3>HP Pavilion 24 All-in-One</h3>
+                            <p>Intel Core i5, 8GB RAM, 512GB SSD, 23.8" FHD</p>
+                            <div class="price-display">
+                                <span class="price">72,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/Lenovo_IdeaCentre.jpg" alt="All-in-One Computer">
+                        <div class="product-info">
+                            <h3>Lenovo IdeaCentre AIO 3</h3>
+                            <p>AMD Ryzen 5, 8GB RAM, 512GB SSD, 23.8" FHD</p>
+                            <div class="price-display">
+                                <span class="price">68,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/Dell_Inspiron_all.jpg" alt="All-in-One Computer">
+                        <div class="product-info">
+                            <h3>Dell Inspiron 27 7000</h3>
+                            <p>Intel Core i7, 16GB RAM, 1TB SSD, 27" 4K UHD</p>
+                            <div class="price-display">
+                                <span class="price">119,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/ASUS_Zen.jpeg" alt="All-in-One Computer">
+                        <div class="product-info">
+                            <h3>ASUS Zen AiO 24</h3>
+                            <p>Intel Core i5, 8GB RAM, 256GB SSD, 23.8" FHD Touch</p>
+                            <div class="price-display">
+                                <span class="price">69,990</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Photos/MSI_Modern.jpeg" alt="All-in-One Computer">
+                        <div class="product-info">
+                            <h3>MSI Modern AM242</h3>
+                            <p>Intel Core i7, 16GB RAM, 512GB SSD, 23.8" FHD</p>
+                            <div class="price-display">
+                                <span class="price">84,990</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sri Nagashankara Enterprises</h3>
+                    <p>Your trusted partner for all laptop needs. Buy Best Price Laptops Online - HP, Dell, Lenovo, Apple</p>
+                    <p>#336/3, 1st floor, Krishna Devaraya Road 7th Cross, Gavipuram BENGALURU, KARNATAKA 560019</p>
+                </div>
+                <!-- <div class="footer-section">
+                    <h4>MY ACCOUNT</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-section">
+                    <h4>Our Deals</h4>
+                    <ul>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">Corporate Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>TERMS & CONDITIONS</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Laptop Store India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
